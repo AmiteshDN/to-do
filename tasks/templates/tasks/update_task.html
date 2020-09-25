@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+	<title>Update</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body style="background-color: #f1f3f8;" class="container">
+	<h3 style="text-align: center; text-decoration: underline;" class="card-header alert alert-primary">Update Task</h3>
+
+<form method="POST" action="">
+	{% csrf_token%}
+
+	<!-- <h6>Task: {{form.title}}</h6>
+	<h6>{{form.complete}} Completed</h6> -->
+	{{form.as_p}}
+	<input class="btn btn-primary" type="submit" name="Update Task">
+	
+</form>
+</body>
+</html>
